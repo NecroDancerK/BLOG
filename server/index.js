@@ -21,7 +21,7 @@ const DB_NAME = process.env.DB_NAME
 // Middleware
 app.use(cors(
   {
-    origin: ["https://blog-two-eosin.vercel.app/"],
+    origin: ["https://blog-3p9s.vercel.app/"],
     methods: ["POST", "GET"],
     credentials: true
   }

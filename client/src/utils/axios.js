@@ -1,8 +1,7 @@
 import axios from 'axios'
 
 const instance = axios.create({
-  baseURL: 'http://blog-two-eosin.vercel.app
-:3002/api',
+  baseURL: 'http://blog-two-eosin.vercel.app:3002/api',
   validateStatus: () => true,
 })
 

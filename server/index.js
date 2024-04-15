@@ -19,7 +19,13 @@ const DB_PASSWORD = process.env.DB_PASSWORD
 const DB_NAME = process.env.DB_NAME
 
 // Middleware
-app.use(cors())
+app.use(cors(
+  {
+    origin: ["https://blog-two-eosin.vercel.app/"],
+    methods: ["POST", "GET"],
+    credentials: true
+  }
+))
 app.use(fileUpload())
 app.use(express.json())
 app.use(express.static('uploads'))
